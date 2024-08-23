@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cute+Font&family=Dongle&family=Inter:wght@100..900&family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Monda:wght@400;700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5000);
+}
+
+
+.nav-con {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #222325;
+}
+
+.left-corner {
+  padding: 10px 0px 10px 30px;
+}
+
+.left-corner a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20pc;
+}
+
+.left-corner img {
+  height: 35px;
+}
+
+
+.search-icon {
+  height: 30px;
+}
+
+.search-con {
+  border: 1px solid #000;
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}
+
+.cart img {
+  height: 40px;
+}
+
+.search-bar {
+  width: 500px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 5px;
+  background-color: transparent;
+  border: 1px solid #000;
+  outline: none;
+  padding: 1em;
+}
+
+.search-bar::placeholder {
+  font-size: 20px;
+  color: #000;
+
+
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 10px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  margin-left: 2%;
+  position: relative;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #df2828;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'roboto';
+}
+
+.links-con {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 10px;
+  background: rgb(245, 164, 2);
+
+}
+
+.log img {
+  height: 40px;
+}
+
+.link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-list ul {
+  list-style: none;
+}
+
+.link-list a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'roboto';
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.link-list a:hover {
+  color: #F5A302;
+}
+
+.burger img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+/*Content*/

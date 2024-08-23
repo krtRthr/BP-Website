@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cute+Font&family=Dongle&family=Inter:wght@100..900&family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Monda:wght@400;700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cute+Font&family=Dongle&family=Inter:wght@100..900&family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Monda:wght@400;700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap');
+
+.first-content {
+  height: 80vh;
+  background: linear-gradient(rgba(19, 13, 1, 0.233), rgba(225, 182, 97, 0.479)), url("Bg.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.text-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-con h1 {
+
+  font-family: 'Roboto Condensed';
+  font-size: 100px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+
+.shop-now {
+  width: 160px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.shop-now:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.eastern {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 10px;
+  border: 5px solid #F5A302;
+
+}
+
+.eastern-logo img {
+  height: 3rem;
+
+}
+
+.western {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 5px solid #F5A302;
+
+}
+
+.western-logo img {
+  height: 3rem;
+
+}
+
+.nba-list h1 {
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 50px;
+  margin-top: 2%;
+  color: #fff;
+}
+
+.line {
+  width: 30rem;
+  background-color: #F5A302;
+  height: 0.2rem;
+}
+
+.trend-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.trend-text .text {
+  font-family: 'monda';
+  font-weight: 700;
+  color: #fff;
+  font-size: 50px;
+}
+
+/*Trend*/
+
+
+.trend-title {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+
+
+}
+
+.trend-title h2 {
+  color: #fff;
+  font-family: 'Monda';
+  margin-right: 20px;
+}
+
+/*view btn*/
+.view {
+  background-color: transparent;
+  border: none;
+  color: #F5A302;
+  cursor: pointer;
+}
+
+/*PhotoHolder*/
+
+.photoholder {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 2%;
+
+}
+
+.photo {
+  position: relative;
+  width: 13rem;
+  height: 19rem;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid #F5A302;
+
+}
+
+.jersey-photo {
+  width: 100%;
+  margin-top: 10%;
+  display: block;
+  transition: 0.5s;
+
+}
+
+
+.jersey-photo:hover {
+  transform: scale(1.1);
+}
+
+.jersey-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #000;
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 1;
+
+}
+
+.jersey-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'monda';
+}
+
+.jersey-price {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.photo:hover .jersey-info {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.photo:hover .overlay {
+  opacity: 0;
+}
+
+/*Mop*/
+
+.mop-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+
+}
+
+.line-mop {
+  width: 10rem;
+  background-color: #F5A302;
+  height: 0.2rem;
+}
+
+.mop-text {
+  font-family: 'monda';
+  font-weight: 500;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+/*mop logo*/
+.mop-logocon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+  background-color: #fff;
+  border: 5px solid #F5A302;
+  margin-bottom: 5%;
+
+}
+
+.mop-logo img {
+  width: 9rem;
+  padding: 0.2rem;
+}
+
+.jersey {
+  margin-bottom: 12%;
+}
+
+/*player col*/
+
+.playerphoto img {
+
+  width: 400px;
+  height: 600px;
+  border-radius: 5px;
+  border: 1px solid #F5A302;
+}
+
+.player-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: #f5a40269;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+}
+
+.player-overlay a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Roboto';
+}
+
+.player-overlay:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+.playerconphoto {
+  position: relative;
+
+}
+
+
+.playercol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.playercon {
+
+  display: flex;
+  width: 140vh;
+  box-sizing: border-box;
+
+}
+
+.player-collection {
+
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Monda';
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2.3px;
+  color: #FFFFFF;
+  position: relative;
+
+}
+
+.line-4 {
+  background: #F5A302;
+  margin-bottom: 14px;
+  align-self: flex-start;
+  width: 500rem;
+  height: 5px;
+}
+
+.line-5 {
+  background: #F5A302;
+  align-self: flex-end;
+  width: 500rem;
+  height: 5px;
+}
+
+/*Footer*/
+
+.column-con {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.col {
+  margin-top: 5rem;
+}
+
+.col h3 {
+  color: #F5A302;
+  font-family: 'Monda';
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.col a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-family: 'Roboto condensed';
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/*footcon*/
+.bottom-foot {
+  background-color: #F5A302;
+  min-height: 7vh;
+  width: 100%;
+
+}
+
+.btm-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.9rem;
+  font-size: 0.9em;
+}
+
+.btm-col a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*About us*/
+.abt-con {
+  position: relative;
+  padding-top: 10%;
+  background: linear-gradient(rgba(19, 16, 12, 0.562), rgba(87, 85, 81, 0.753)), url("oracle-arena-warriorsjpg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.abt-con h1 {
+  color: #e4e4e4;
+  font-family: 'monda';
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.introtext {
+  display: flex;
+  padding: 5%;
+  gap: 3%;
+
+}
+
+.introtext span {
+  color: #F5A302;
+}
+
+.introtext h3 {
+  font-size: 4em;
+  color: #fff;
+  width: 500px;
+}
+
+.introtext p {
+  color: #fff;
+  width: 350px;
+  font-family: sans-serif;
+}
+
+.features {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.abt-box {
+  border: 3px solid #F5A302;
+  padding: 1%;
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+  gap: 10%;
+}
+
+.abt-box img {
+  height: 50px;
+}
+
+.abt-bgimg {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(19, 16, 12, 0.233), rgba(110, 101, 82, 0.479)), url("abtg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5%;
+}
+
+.abt-line2 {
+  width: 50%;
+  height: 2px;
+  background-color: #F5A302;
+  margin-bottom: 5%
+}
+
+.abt-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'monda';
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.abt-mission h1 {
+  font-family: 'monda';
+  margin-bottom: 3%;
+  font-size: 3rem;
+}
+
+.abt-mission p {
+  font-family: 'monda';
+  margin-bottom: 3%;
+  text-align: justify;
+  width: 80%;
+}
+
+.abt-vision h1 {
+  font-family: 'monda';
+  margin-bottom: 3%;
+  font-size: 3rem;
+}
+
+.abt-vision p {
+  font-family: 'monda';
+  margin-bottom: 3%;
+  text-align: justify;
+  width: 80%;
+}
+
+.abt-vision {
+  margin: 15% 0 0 0;
+  width: 140%;
+}
+
+.abt-mission {
+  width: 150%;
+  margin: 0 1% 10px 10%;
+}
+
+.abt-lcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.abt-line3 {
+  width: 15%;
+  height: 10px;
+  background-color: #F5A302;
+  border-radius: 20px;
+
+}
+
+.abt-photoholder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.abt-title h1 {
+  font-family: 'monda';
+  font-size: 2.5em;
+  margin: 0 20px 0 20px;
+  color: #fff;
+}
+
+.abt-teamimages {
+  width: 300px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 1PX SOLID #F5A302
+}
+
+.abt-photoholder h1 {
+  color: #fff;
+  font-family: 'monda';
+  font-size: 1em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+/*player col*/
+
+.playerconphoto img {
+
+  width: 400px;
+  height: 600px;
+  border-radius: 5px;
+  border: 1px solid #F5A302;
+}
+
+.playercollection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.playercol {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.playercon {
+
+  display: flex;
+  width: 140vh;
+  box-sizing: border-box;
+
+}
+
+.player-collection {
+
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2.3px;
+  color: #FFFFFF;
+
+}
+
+.line-4 {
+  background: #F5A302;
+  margin-bottom: 14px;
+  align-self: flex-start;
+  width: 500rem;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.line-5 {
+  background: #F5A302;
+  align-self: flex-end;
+  width: 500rem;
+  height: 5px;
+  border-radius: 5px;
+
+}
+
+/*PhotoCollection*/
+
+.photoholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 2%;
+
+}
+
+.photo {
+  position: relative;
+  width: 13rem;
+  height: 19rem;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid #F5A302;
+}
+
+.jersey-photo {
+  width: 100%;
+  margin-top: 10%;
+  display: block;
+  transition: 0.5s;
+
+}
+
+
+.jersey-photo:hover {
+  transform: scale(1.1);
+}
+
+.jersey-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #000;
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 1;
+
+}
+
+.jersey-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'monda';
+}
+
+.jersey-price {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.photo:hover .jersey-info {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+
+/*Shoes*/
+
+.shoes-con {
+  height: 80vh;
+  background: #cfcccc;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  gap: 10%;
+
+}
+
+.shoes-text h1 {
+  font-size: 6em;
+  font-family: 'roboto';
+  width: 400px;
+}
+
+.shoes {
+  display: flex;
+  flex-direction: row;
+}
+
+.shoes-con img {
+  height: 50rem;
+}
+
+.scon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.sfeatures {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  flex-direction: column;
+  width: 250px;
+
+
+}
+
+.sfeatures h4 {
+  font-family: 'roboto';
+  color: #fff;
+  padding: 5%;
+}
+
+.sfeatures p {
+  font-family: 'Monda';
+  color: #fff;
+  font-size: 0.800em;
+  text-align: center;
+  padding: 5%;
+
+
+}
+
+.sfeatures img {
+  height: 65px;
+
+}
+
+.sicon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.shoes-line {
+  width: 30rem;
+  background-color: #F5A302;
+  height: 0.1rem;
+  border-radius: 5px;
+}
+
+/*Login page*/
+
+.login-container {
+  position: absolute;
+  top: 25%;
+  right: 8%;
+  transform: translate(-30%, -10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.login-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-details h1 {
+  color: #fff;
+  font-family: 'inter';
+  font-size: 2em;
+  margin-bottom: 7%;
+
+}
+
+.login-logo {
+  margin-bottom: 5%;
+}
+
+.login-logo img {
+  height: 35px;
+  margin-bottom: 10%;
+}
+
+.login-lfname {
+  margin-bottom: 7%;
+}
+
+.fname-con {
+  display: inline-block;
+}
+
+.lname-con {
+  display: inline-block;
+}
+
+.login-container p {
+  color: #fff;
+  font-family: 'inter';
+  font-size: 0.800em;
+  padding-left: 3%;
+  padding-bottom: 2%;
+}
+
+.login-name {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.login-input {
+  width: 320px;
+  height: 30px;
+  margin-bottom: 7%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+
+}
+
+.login-create {
+  padding: 3% 5% 3% 5%;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 6%;
+}
+
+.login-create a {
+  text-decoration: none;
+  color: #000000;
+}
+
+span {
+  color: #F5A302;
+}
+
+.have-account a {
+  text-decoration: none;
+  color: #E1B661;
+}
+
+.vertical-line {
+  height: 100vh;
+  width: 1px;
+  background: #cfcccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c1 {
+  position: absolute;
+  bottom: -15%;
+  left: -4%;
+}
+
+.c2 {
+  position: absolute;
+  bottom: -2%;
+  left: -15%;
+}
+
+.c3 {
+  position: absolute;
+  top: -20%;
+  left: -11%;
+}
+
+.login-ads {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 10;
+}
+
+.login-ads p {
+  font-size: 4em;
+  width: 550px;
+  color: #fff;
+  font-family: 'Outfit';
+  font-weight: 500;
+}

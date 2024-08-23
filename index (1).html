@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/addtocart.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="Images/assets//icon.png">
+    <script src="function.js"></script>
+    <title>BDP NBA Sportwear</title>
+
+</head>
+<body> 
+
+    <!--ADD TO CART POP UP CONTAINER-->
+    <div class="pop-up">
+        <div class="pop-upcon">
+            <!--close button-->
+            <div class="closebtn" onclick="closePopup()"><img src="Images/ICON/icons8-wrong-100.png" alt="">
+            </div>
+
+            <div class="addtocart">
+                <img class="jerseycart" src="Images/assets/ex.png" alt="">
+                
+                <div class="details">
+
+                    <!--jerey name and price-->
+                    <h1>Jersey name</h1>
+                    <p>$500</p>
+                
+                    <!--size dropdown-->
+                    <div class="dropdown">
+                        <p>Size:</p>
+                        <select>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <!--Quantity-->
+                    <div class="quantity">
+                        <h1>Quantity:</h1>
+                        <div class="quantity-container">
+                            <button class="minus" onclick="decrementQuantity()">-</button>
+                            <input type="number" value="1" min="1" max="100" />
+                            <button class="plus" onclick="incrementQuantity()">+</button>
+                          </div>
+                    </div>
+
+                  
+
+                    <div class="popbtn">
+                          <!--Add to cart button-->
+                        <div class="addtocart-btn">
+                            <button class="addtocart-button" onclick="addToCart()">Add to Cart</button>
+    
+                        </div>
+    
+                        <!--buy now button-->
+                        <div class="buynow-btn">
+                            <button class="buynow-button" onclick="buyNow()">Buy Now</button>
+    
+                        </div>
+    
+                    </div>
+                   
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!--END OF POP UP CONTAINER-->
+
+
+
+
+    <!--header-->
+        <section id="header">
+            <!--Parent Nav-->
+            <nav class="navbar">
+                        <!--Nav con para sa 1st layer -->
+                        <div class="nav-con">   <!--1st navbar-->
+                                    <!--Container ng logo-->
+                                    <div class="left-corner">
+                                        <a href="index.html"><img src="Images/assets/FinalLogo.png" alt=""></a>
+                                    </div>
+                                    <!--Container ng na links-->
+                                    <div class="link-list">
+                                    <ul>
+                                        <a href="about.html"><li>About</li></a>
+                                        <a href=""><li>Shop by Team</li></a>
+                                        <a href=""><li>Jersey</li></a>
+                                        <a href="shoes.html"><li>Shoes</li></a>
+                                    </ul>
+                                    <div class="log">
+                                        <a href="loginpage.html"><img src="Images/ICON/icons8-male-user-96.png" alt=""></a>
+                                    </div>
+                                </div>           
+
+                                    
+                        </div>
+                    <!--container ng 2ng layer ng navbar -->   
+                    <div class="links-con">
+                        <!--container para sa burger menu-->
+                        <!--<div class="burger">
+                            <img src="Images/assets/Burger Bar.png" alt="Burger menu">
+                        </div> -->
+                    
+                                        <!--Container ng search bar and search icon and add to cart-->
+                        <div class="middle-section">
+
+                        
+                                <input class="search-bar" type="search" placeholder="Search">
+                        
+                                <div class="search-con">
+                                    <a href=""><img class="search-icon" src="Images/ICON/icons8-search-100.png" alt="search icon"></a> 
+                                </div> 
+                          
+                        
+                                <div class="cart" onclick="toggleCart()">
+                                    <img src="Images/ICON/icons8-basket-96.png" alt="">
+                                    <p id="count">0</p>
+                                </div>                                
+                        </div>
+                                        
+                </div>
+            </nav>
+            <!--DROPDOWN-->
+            <div class="mega-box">
+                <div class="content">
+                <div class="row">
+                    <header><b>EASTERN CONFERENCE</b></header>
+                    <ul class="mega-links">
+                    <li><a href="shopByTeamAtlanta.html">ATLANTA HAWKS</a></li>
+                    <li><a href="shopByTeamBoston.html">BOSTON CELTICS</a></li>
+                    <li><a href="shopByTeamBrooklyn.html">BROOKLYN NETS</a></li>
+                    <li><a href="shopByTeamCharlotte.html">CHARLOTTE HORNETS</a></li>
+                    <li><a href="shopByTeamChicago.html">CHICAGO BULLS</a></li>
+                    <li><a href="shopByTeamCleveland.html">CLEVELAND CAVALIERS</a></li>
+                    <li><a href="shopByTeamDetroit.html">DETROIT PISTONS</a></li>
+                    <li><a href="shopByTeamIndiana.html">INDIANA PACERS</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <header class="header-to-hide"> adwwd </header>
+                    <ul class="mega-links">
+                    <li><a href="shopByTeamMiami.html">MIAMI HEAT</a></li>
+                    <li><a href="shopByTeamMilwaukee.html">MILWAUKEE BUCKS</a></li>
+                    <li><a href="shopByTeamNewYork.html">NEW YORK KNICKS</a></li>
+                    <li><a href="shopByTeamOrlando.html">ORLANDO MAGIC</a></li>
+                    <li><a href="shopByTeamPhiladelphia.html">PHILADELPHIA 76ERS</a></li>
+                    <li><a href="shopByTeamToronto.html">TORONTO RAPTORS</a></li>
+                    <li><a href="shopByTeamWashington.html">WASHINGTON WIZARDS</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <header><b>WESTERN CONFERENCE</header>
+                    <ul class="mega-links">
+                    <li><a href="shopByTeamDallas.html">DALLAS MAVERICKS</a></li>
+                    <li><a href="shopByTeamDenver.html">DENVER NUGGETS</a></li>
+                    <li><a href="shopByTeamGoldenState.html">GOLDEN STATE WARRIORS</a></li>
+                    <li><a href="shopByTeamHouston.html">HOUSTON ROCKETS</a></li>
+                    <li><a href="shopByTeamLAClippers.html">LA CLIPPERS</a></li>
+                    <li><a href="shopByTeamLALakers.html">LOS ANGELES LAKERS</a></li>
+                    <li><a href="shopByTeamMemphis.html">MEMPHIS GRIZZLIES</a></li>
+                    <li><a href="shopByTeamMinnesota.html">MINNESOTA TIMBERWOLVES</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <header class="header-to-hide"> sdw</header>
+                    <ul class="mega-links">
+                    <li><a href="shopByTeamNewOrleans.html">NEW ORLEANS PELICANS</a></li>
+                    <li><a href="shopByTeamOklahoma.html">OKLAHOMA CITY THUNDER</a></li>
+                    <li><a href="shopByTeamPhoenix.html">PHOENIX SUNS</a></li>
+                    <li><a href="shopByTeamPortland.html">PORTLAND TRAIL BLAZERS</a></li>
+                    <li><a href="shopByTeamSacramento.html">SACRAMENTO KINGS</a></li>
+                    <li><a href="shopByTeamSanAntonio.html">SAN ANTONIO SPURS</a></li>
+                    <li><a href="shopByTeamUtah.html">UTAH JAZZ</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+             <!--Content-->
+             <div class="first-content">
+                
+                <div class="text-con">
+                    <h1>Elevate Your Style Dominate the Court</h1>
+                   <a href="#shopnoww"> <button class="shop-now">Shop now</button></a>
+                </div>
+               
+             </div>
+
+             <div class="nba-list">
+                <h1>Eastern Conference</h1>
+                <div class="eastern">
+                    <div class="eastern-logo logo1">
+                        <a href="shopByTeamAtlanta.html">
+                            <img src="Images/Nba logo/NBA_Atlanta_Hawks_Global_Logo_200x200.png" alt="Atlanta Hawks Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo2">
+                        <a href="shopByTeamBoston.html">
+                            <img src="Images/Nba logo/NBA_Boston_Celtics_Global_Logo_200x200.png" alt="Boston Celtics Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo3">
+                        <a href="shopByTeamBrooklyn.html">
+                            <img src="Images/Nba logo/NBA_Brooklyn_Nets_Global_Logo_200x200.png" alt="Brooklyn Nets Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo4">
+                        <a href="shopByTeamCharlotte.html">
+                            <img src="Images/Nba logo/NBA_Charlotte_Hornets_Global_Logo_200x200 (1).png" alt="Charlotte Hornets Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo5">
+                        <a href="shopByTeamChicago.html">
+                            <img src="Images/Nba logo/NBA_Chicago_Bulls_Global_Logo_200x200.png" alt="Chicago Bulls Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo6">
+                        <a href="shopByTeamCleveland.html">
+                            <img src="Images/Nba logo/cleveland_Logo_200x200.png" alt="Cleveland Cavaliers Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo7">
+                        <a href="shopByTeamDetroit.html">
+                            <img src="Images/Nba logo/NBA_Detroit_Pistons_Global_Logo_200x200.png" alt="Detroit Pistons Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo8">
+                        <a href="shopByTeamIndiana.html">
+                            <img src="Images/Nba logo/NBA_Indiana_Pacers_Global_Logo_200x200.png" alt="Indiana Pacers Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo9">
+                        <a href="shopByTeamMiami.html">
+                            <img src="Images/Nba logo/NBA_Miami_Heat_Global_Logo_200x200.png" alt="Miami Heat Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo10">
+                        <a href="shopByTeamMilwaukee.html">
+                            <img src="Images/Nba logo/NBA_Milwaukee_Bucks_Global_Logo_200x200.png" alt="Milwaukee Bucks Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo11">
+                        <a href="shopByTeamNewYork.html">
+                            <img src="Images/Nba logo/NBA_New_York_Knicks_Global_Logo_200x200.svg" alt="New York Knicks Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo12">
+                        <a href="shopByTeamOrlando.html">
+                            <img src="Images/Nba logo/NBA_Orlando_Magic_Global_Logo_200x200.svg" alt="Orlando Magic Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo13">
+                        <a href="shopByTeamPhiladelphia.html">
+                            <img src="Images/Nba logo/NBA_Philadelphia_76ers_Global_Logo_200x200.svg" alt="Philadelphia 76ers Logo">
+                        </a>
+                    </div>
+                    <div class="eastern-logo logo14">
+                        <a href="shopByTeamToronto.html">
+                            <img src="Images/Nba logo/NBA_Toronto_Raptors_Global_Logo_200x200.svg" alt="Toronto Raptors Logo">
+                        </a>
+                    </div>
+                    
+                </div>
+                  <h1>Western Conference</h1>
+                <div class="western">
+                    <div class="western-logo logo1">
+                        <a href="shopByTeamDallas.html">
+                            <img src="Images/Nba logo/NBA_Dallas_Mavericks_Global_Logo_200x200.png" alt="Dallas Mavericks Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo2">
+                        <a href="shopByTeamDenver.html">
+                            <img src="Images/Nba logo/NBA_Denver_Nuggets_Global_Logo_200x200.png" alt="Denver Nuggets Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo3">
+                        <a href="shopByTeamGoldenState.html">
+                            <img src="Images/Nba logo/NBA_Golden_State_Warriors_Global_Logo_200x200.png" alt="Golden State Warriors Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo4">
+                        <a href="#">
+                            <img src="Images/Nba logo/NBA_Houston_Rockets_Global_Logo_200x200.png" alt="Houston Rockets Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo5">
+                        <a href="shopByTeamLAClippers.html">
+                            <img src="Images/Nba logo/NBA_LA_Clippers_Global_Logo_200x200.png" alt="LA Clippers Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo6">
+                        <a href="shopByTeamLALakers.html">
+                            <img src="Images/Nba logo/NBA_Los_Angeles_Lakers_Global_Logo_200x200.png" alt="Los Angeles Lakers Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo7">
+                        <a href="shopByTeamMemphis.html">
+                            <img src="Images/Nba logo/NBA_Memphis_Grizzlies_Global_Logo_200x200.png" alt="Memphis Grizzlies Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo8">
+                        <a href="shopByTeamMinnesota.html">
+                            <img src="Images/Nba logo/NBA_Minnesota_Timberwolves_Global_Logo_200x200.svg" alt="Minnesota Timberwolves Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo9">
+                        <a href="shopByTeamNewOrleans.html">
+                            <img src="Images/Nba logo/NBA_New_Orleans_Pelicans_Global_Logo_200x200.svg" alt="New Orleans Pelicans Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo10">
+                        <a href="shopByTeamOklahoma.html">
+                            <img src="Images/Nba logo/NBA_Oklahoma_City_Thunder_Global_Logo_200x200.svg" alt="Oklahoma City Thunder Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo11">
+                        <a href="shopByTeamPhoenix.html">
+                            <img src="Images/Nba logo/NBA_Phoenix_Suns_Global_Logo_200x200.svg" alt="Phoenix Suns Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo12">
+                        <a href="shopByTeamPortland.html">
+                            <img src="Images/Nba logo/NBA_Portland_Trail_Blazers_Global_Logo_200x200.svg" alt="Portland Trail Blazers Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo13">
+                        <a href="shopByTeamSacramento.html">
+                            <img src="Images/Nba logo/NBA_Sacramento_Kings_Global_Logo_200x200 (1).svg" alt="Sacramento Kings Logo">
+                        </a>
+                    </div>
+                    <div class="western-logo logo14">
+                        <a href="shopByTeamSanAntonio.html">
+                            <img src="Images/Nba logo/NBA_San_Antonio_Spurs_Global_Logo_200x200.svg" alt="San Antonio Spurs Logo">
+                        </a>
+                    </div>
+                    
+                </div>
+             </div>
+
+             <div class="trend-text">
+                <div class="line"></div>
+                <div class="text">Trending Sportware</div>
+                <div class="line"></div>
+             </div>
+
+             <div class="trend-jersey">
+                <div id="shopnoww" class="trend-title">
+                    <h2>2024 TRENDING JERSEY</h2>
+                    <a href=""><button class="view"></button></a>
+                </div>
+                
+                <!--Trending Products-->
+
+                <div class="container">
+                    <div id="root"></div>
+                </div>
+               
+
+                <!--MoP-->
+                <div class="mop-con">
+                    <div class="line-mop"></div>
+                    <div class="mop-text">We accept here</div>
+                    <div class="line-mop"></div>
+                </div>
+
+                <div class="mop-logocon">
+                    <a href="" class="mop-logo"><img src="Images/assets/gcash-seeklogo.png" alt=""></a>
+                    <a href="" class="mop-logo"><img src="Images/assets/GoTyme_Bank_2022.png" alt=""></a>
+                    <a href="" class="mop-logo"><img src="Images/assets/PayMaya_Logo.png" alt=""></a>
+                </div>
+                
+                <div class="trend-jersey">
+                    <div class="trend-title">
+                        <h2>JERSEY</h2>
+                        <a href=""><button class="view"> </button></a>
+                    </div>
+                    
+                   <!--Jersey Product-->
+                  
+
+                   <div class="container" >
+                        <div id="rootJersey"></div>
+                   </div>
+
+
+
+                    <div class="trend-jersey">
+                        <div class="trend-title">
+                            <h2>Shoes</h2>
+                            <a href=""><button class="view"></button></a>
+                        </div>
+                    
+                   <!--Shoes Product-->
+                       
+                   <div class="container" >
+                     <div id="rootShoes"></div>
+                   </div>
+<img src="" alt="">
+                <!--playercol-->
+                <div class="playercol">
+                    <div class="playercon">
+                        <div class="line-4">
+                        </div>
+                        <div class="player-collection">
+                        <h1>PLAYER COLLECTION </h1> 
+                        </div>
+                        <div class="line-5">
+                        </div>
+                    </div>
+                </div>
+
+                    <div class=" playercollection">
+
+                        <div class="playerconphoto">
+                            <img class="collection" src="Images/assets/lebron-james-2-2000-c42c46892cfe42bd93e90b53cef655e4.webp" alt="">
+
+                            <div class="player-overlay">
+                                <a href="3-lakers.html">Lebron James</a>
+                            </div>
+                        </div>
+
+                        <div class="playerconphoto">
+                            <img class="collection" src="Images/assets/sc.jpg" alt="">
+
+                            <div class="player-overlay">
+                                <a href="2-warriors.html">Stephen Curry</a>
+                            </div>
+                        </div>
+
+                        <div class="playerconphoto">
+                            <img class="collection" src="Images/assets/luka.jpg" alt="">
+
+                            <div class="player-overlay">
+                                <a href="1-dallas.html">Luca Doncic</a>
+                            </div> 
+                        </div>
+
+                    </div>
+
+
+    </section>
+
+    <footer>
+        <div class="column-con">
+          <div class="col">
+            <h3>BDP Sportwear</h3>
+              <li><a href="index.html">About</a></li>
+              <li><a href="#top">Shop by Team</a></li>
+              <li><a href="#top">Jersey</a></li>
+              <li><a href="shoes.html">Shoes</a></li>
+          </div>
+          <div class="col">
+            <h3>EXPERIENCE</h3>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Store Policy</a></li>
+              <li><a href="#">Shipping & Return</a></li>
+              <li><a href="#">Payment Method</a></li>
+          </div>
+          <div class="col">
+            <h3>FOLLOW US</h3>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+          </div>
+          <div class="col">
+            <h3>CONTACT</h3>
+              <li><a href="tel:09219869473">Tel no: 0921-986-9473</a></li>
+              <li><a href="mailto:BdpApparel@gmail.com">BdpSportwear@gmail.com</a></li>
+          </div>
+        </div>
+        <div class="bottom-foot">
+          <div class="btm-col">
+            © BDP Sportwear 2024. All Rights Reserved. | <span class="privacy"><a href=""> Privacy Policy |</a></span><span class="Terms"><a href="">Terms of Service |</a></span><span class="con"><a href=""> Contact Us</a></span>
+          </div>
+        </div>
+      </footer>
+      <div class="sidebar" id="cartSidebar">
+        <div class="head">
+            <p>My Cart</p>
+            
+        </div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+    <script src="fuunc.js"></script>
+      <script src="checkoutPage.js"></script>
+</body>
+</html> 

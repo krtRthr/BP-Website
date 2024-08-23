@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out Page</title>
+  <link rel="stylesheet" href="./style/general.css">
+  <link rel="stylesheet" href="./style/navbar.css">
+  <link rel="stylesheet" href="./style/checkOutPage.css">
+  <link rel="icon" type="image/x-icon" href="Images/assets//icon.png">
+</head>
+<body>
+  <!--ADD TO CART-->
+    <!--header-->
+    <section id="header">
+      <!--Parent Nav-->
+      <nav class="navbar">
+        <!--Nav con para sa 1st layer -->
+        <div class="nav-con">   <!--1st navbar-->
+            <!--Container ng logo-->
+            <div class="left-corner">
+              <a href="index.html"><img src="Images/assets/FinalLogo.png" alt=""></a>
+            </div>
+            <!--Container ng na links-->
+            <div class="link-list">
+            <ul>
+              <a href="about.html"><li>About</li></a>
+              <a href=""><li>Shop by Team</li></a>
+              <a href=""><li>Jersey</li></a>
+              <a href="shoes.html"><li>Shoes</li></a>
+            </ul>
+            <div class="log">
+              <a href="loginpage.html"><img src="Images/ICON/icons8-male-user-96.png" alt=""></a>
+            </div>
+          </div>             
+        </div>
+        <!--container ng 2ng layer ng navbar -->   
+        <div class="links-con">
+          <!--container para sa burger menu-->
+          <div class="burger">
+            <img src="Images/assets/Burger Bar.png" alt="Burger menu">
+          </div>
+          <!--Container ng search bar and search icon and add to cart-->
+          <div class="middle-section">
+            <input class="search-bar" type="search" placeholder="Search">
+            <div class="search-con">
+                <a href=""><img class="search-icon" src="Images/ICON/icons8-search-100.png" alt="search icon" onkeyup="search()"></a> 
+            </div> 
+            <div class="cart">
+              <a href="checkOutPage.html"><img class="cart-icon" src="Images/ICON/icons8-basket-96.png" alt="add to cart">
+                <span class="cart-notification" id="cart-notification">0</span>
+              </a>
+            </div>                                           
+          </div>               
+        </div>
+      </nav>
+    </section>
+    <!--DROPDOWN-->
+    <div class="mega-box">
+      <div class="content">
+        <div class="row">
+          <header><b>EASTERN CONFERENCE</b></header>
+          <ul class="mega-links">
+            <li><a href="shopByTeamAtlanta.html">ATLANTA HAWKS</a></li>
+            <li><a href="shopByTeamBoston.html">BOSTON CELTICS</a></li>
+            <li><a href="shopByTeamBrooklyn.html">BROOKLYN NETS</a></li>
+            <li><a href="shopByTeamCharlotte.html">CHARLOTTE HORNETS</a></li>
+            <li><a href="shopByTeamChicago.html">CHICAGO BULLS</a></li>
+            <li><a href="shopByTeamCleveland.html">CLEVELAND CAVALIERS</a></li>
+            <li><a href="shopByTeamDetroit.html">DETROIT PISTONS</a></li>
+            <li><a href="shopByTeamIndiana.html">INDIANA PACERS</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <header class="header-to-hide"> adwwd </header>
+          <ul class="mega-links">
+            <li><a href="shopByTeamMiami.html">MIAMI HEAT</a></li>
+            <li><a href="shopByTeamMilwaukee.html">MILWAUKEE BUCKS</a></li>
+            <li><a href="shopByTeamNewYork.html">NEW YORK KNICKS</a></li>
+            <li><a href="shopByTeamOrlando.html">ORLANDO MAGIC</a></li>
+            <li><a href="shopByTeamPhiladelphia.html">PHILADELPHIA 76ERS</a></li>
+            <li><a href="shopByTeamToronto.html">TORONTO RAPTORS</a></li>
+            <li><a href="shopByTeamWashington.html">WASHINGTON WIZARDS</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <header><b>WESTERN CONFERENCE</header>
+          <ul class="mega-links">
+            <li><a href="shopByTeamDallas.html">DALLAS MAVERICKS</a></li>
+            <li><a href="shopByTeamDenver.html">DENVER NUGGETS</a></li>
+            <li><a href="shopByTeamGoldenState.html">GOLDEN STATE WARRIORS</a></li>
+            <li><a href="shopByTeamHouston.html">HOUSTON ROCKETS</a></li>
+            <li><a href="shopByTeamLAClippers.html">LA CLIPPERS</a></li>
+            <li><a href="shopByTeamLALakers.html">LOS ANGELES LAKERS</a></li>
+            <li><a href="shopByTeamMemphis.html">MEMPHIS GRIZZLIES</a></li>
+            <li><a href="shopByTeamMinnesota.html">MINNESOTA TIMBERWOLVES</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <header class="header-to-hide"> sdw</header>
+          <ul class="mega-links">
+            <li><a href="shopByTeamNewOrleans.html">NEW ORLEANS PELICANS</a></li>
+            <li><a href="shopByTeamOklahoma.html">OKLAHOMA CITY THUNDER</a></li>
+            <li><a href="shopByTeamPhoenix.html">PHOENIX SUNS</a></li>
+            <li><a href="shopByTeamPortland.html">PORTLAND TRAIL BLAZERS</a></li>
+            <li><a href="shopByTeamSacramento.html">SACRAMENTO KINGS</a></li>
+            <li><a href="shopByTeamSanAntonio.html">SAN ANTONIO SPURS</a></li>
+            <li><a href="shopByTeamUtah.html">UTAH JAZZ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--SECTION CHECKOUT-->
+      <div class="shopping-cart">
+        <h1>Shopping Cart</h1>
+        <div class="cart-item">
+            <img src="Images/jersey/ATLANTA HAWKS/DEJOUNTE MURRAY/murray-black.png" alt="jersey">
+            <div class="item-details">
+                <h2>DeJounte Murray Statement Edition Jersey</h2>
+                <p>Size: <span>L</span> Color: <span>Black</span></p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="item-price">$549.00</div>
+            <button class="delete-item">X</button>
+        </div>
+        <div class="cart-item">
+            <img src="Images/jersey/BOSTON CELTICS/JAYSON TATUM/tatum-green.png" alt="jersey">
+            <div class="item-details">
+                <h2>Jayson Tatum Icon Edition Jersey</h2>
+                <p>Size: <span>M</span> Color: <span>Green</span></p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="item-price">$549.00</div>
+            <button class="delete-item">X</button>
+        </div>
+        <div class="cart-item">
+            <img src="Images/jersey/LOS ANGELES LAKERS/LEBRON JAMES/city-white.png" alt="jersey">
+            <div class="item-details">
+                <h2>LeBron James City Edition Jersey</h2>
+                <p>Size: <span>S</span> Color: <span>White</span></p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="item-price">$549.00</div>
+            <button class="delete-item">X</button>
+        </div>
+        <div class="cart-item">
+            <img src="Images/jersey/GOLDEN STATE WARRIORS/STEPHEN CURRY/icon (1).png" alt="jersey">
+            <div class="item-details">
+                <h2>Stephen Curry Icon Edition Jersey</h2>
+                <p>Size: <span>L</span> Color: <span>Blue</span></p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="item-price">$549.00</div>
+            <button class="delete-item">X</button>
+        </div>
+        <div class="discount-code">
+            <input type="text" placeholder="Voucher Code">
+            <button>Apply</button>
+        </div>
+        <button class="proceed-to-pay">Proceed to Pay</button>
+    </div>
+
+    <script src="checkoutPage.js"></script>
+</body>
+</html>

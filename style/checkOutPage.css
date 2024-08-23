@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cute+Font&family=Dongle&family=Inter:wght@100..900&family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Monda:wght@400;700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 120px;
+}
+
+.shopping-cart {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+
+}
+
+.sort-by {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  gap: 2%;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-right: 30px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h2 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.item-details p {
+  margin: 5px 0;
+  font-weight: 100;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.item-price {
+  width: 70px;
+  text-align: right;
+}
+
+.delete-item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+  margin: 5px;
+  margin-left: 10px;
+}
+
+.discount-code {
+  display: flex;
+  margin: 20px 0;
+}
+
+.discount-code input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+.discount-code button {
+  padding: 10px;
+  background-color: #F5A302;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.proceed-to-pay {
+  width: 100%;
+  padding: 15px;
+  background-color: #F5A302;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
